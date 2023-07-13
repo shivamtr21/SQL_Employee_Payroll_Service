@@ -23,4 +23,5 @@ insert into employee_payroll values('Sanjam', 50000, '2023-04-21'),
 								   ('Divya', 70000, '2023-04-21'),
 								   ('Aakanksha', 50000, '2023-04-21')
 
+								   /* Retrive data  */
 select * from employee_payroll
