@@ -36,3 +36,9 @@ update employee_payroll set StartDate = '2023-07-12'  where id = 1
 update employee_payroll set StartDate = '2023-07-11'  where id = 2
 update employee_payroll set StartDate = '2023-07-13'  where id = 3
 update employee_payroll set StartDate = '2023-07-14'  where id = 4
+
+
+alter table employee_payroll
+add Gender char(1)
+update employee_payroll set Gender= 'M' where name ='Shivam' OR name = 'Sanjam'  
+update employee_payroll set Gender= 'F' where name ='Divya' or name = 'Aakanksha'
