@@ -71,3 +71,48 @@ ALTER TABLE employee_payroll
 ADD Phone_Number VARCHAR(40),
     address VARCHAR(50) DEFAULT 'NOT KNOWN' NULL,
     department VARCHAR(50) DEFAULT 'NOT KNOWN' NOT NULL;
+
+	/*Add new Column*/
+ALTER TABLE employee_payroll   
+ 
+ADD Deductions float,
+    Taxable_Pay float,
+    Income_Tax float,
+    Net_Pay float
+
+UPDATE employee_payroll
+SET Phone_Number = 98765443, 
+    department = 'Sales',
+	address='sector-2', 
+	Deductions = 1000,
+	 Taxable_Pay = 5.4,
+	 Income_Tax = 7,
+	 Net_Pay = 36000
+	  WHERE id = 1
+UPDATE employee_payroll
+SET Phone_Number = 987987665, 
+    department = 'Marketing',
+	address='sector-7', 
+	Deductions = 500,
+	 Taxable_Pay = 5.4,
+	 Income_Tax = 7,
+	 Net_Pay = 40000
+	  WHERE id = 2
+UPDATE employee_payroll
+SET Phone_Number = 2345443, 
+    department = 'HR',
+	address='sector-5', 
+	Deductions = 1000,
+	 Taxable_Pay = 5.4,
+	 Income_Tax = 7,
+	 Net_Pay =50000
+	  WHERE id = 3
+UPDATE employee_payroll
+SET Phone_Number = 98864432, 
+    department = 'Sales',
+	address='sector-7', 
+	Deductions = 1500,
+	 Taxable_Pay = 5.4,
+	 Income_Tax = 7,
+	 Net_Pay = 36000
+	  WHERE id = 4
